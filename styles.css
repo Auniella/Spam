@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #826AED;
+    font-family: "Lato", sans-serif;
+}
+
+.container {
+    padding: 3rem;
+    width: fit-content;
+    border-radius: 0.4rem;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    margin-left: 1rem;
+}
+
+#timeContainer {
+    font-size: 2.8rem;
+    width: fit-content;
+    margin-bottom: 1rem;
+    border-radius: 0.4rem;
+    padding: 0.5rem 1.5rem;
+    border: 0.1rem solid #000;
+    letter-spacing: 0.1rem;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+button {
+    width: 75%;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.3rem;
+    transition: 0.5s;
+    border-radius: 0.4rem;
+    letter-spacing: 0.1rem;
+    background-color: #5948a7;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+#titre,
+#langues {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#langues button {
+    min-width: fit-content;
+    padding: 1rem 2rem;
+    text-align: center;
+    background-color: #5948a7;
+}
+
+#stop {
+    width: fit-content;
+    background-color: #5948a700;
+    border: none;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 1.5rem;
+}
+
+/*#retour {
+    align-self: flex-start;
+}
+
+#retour button {
+    width: fit-content;
+}
+
+#haut {
+    align-self: flex-start;
+    position: fixed;
+    right: 35rem;
+    z-index: 1;
+}
+
+#haut button {
+    width: fit-content;
+}*/
+
+#retour {
+    align-self: flex-start;
+    position: absolute;
+    left: 1rem;
+    z-index: 1;
+    width: 10rem;
+}
+
+#haut {
+    position: fixed;
+    top: 7rem;
+    left: 1rem;
+    width: 10rem;
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    p {
+        font-size: 1.7rem;
+    }
+
+    button {
+        font-size: 1.3rem;
+    }
+
+    #retour {
+        position: absolute;
+        left: 1rem;
+        z-index: 1;
+        width: auto;
+    }
+
+    #haut {
+        position: fixed;
+        top: 7rem;
+        left: 1rem;
+        width: auto;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        margin: 1rem;
+        text-align: center;
+    }
+
+    #timeContainer {
+        width: fit-content;
+    }
+}
