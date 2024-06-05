@@ -19,6 +19,8 @@ btn_start.onclick = function () {
 
 btn_stop.onclick = function () {
   clearInterval(uploadTime);
+  alert("Thank you for the money 💵💵💵");
+  
   alert("Take your bouquet 💐");
 
   alert("See you soon !");
